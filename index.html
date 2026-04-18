@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricNext - The Ultimate Cricket Companion</title>
+    <link rel="icon" type="image/jpeg" href="CricNext Icon.jpeg">
+    <style>
+        /* Matches your app's dark theme and gold accents */
+        :root {
+            --bg-main: #121212; 
+            --bg-card: #1E1E1E;
+            --text-main: #FFFFFF;
+            --text-sub: #A0A0A0;
+            --brand-gold: #FFB800;
+            --gold-hover: #E6A600;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* --- Header / Hero --- */
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0 0 15px 0;
+            letter-spacing: -1px;
+        }
+
+        p.subtitle {
+            font-size: 20px;
+            color: var(--text-sub);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            line-height: 1.5;
+        }
+
+        /* --- Play Store Button --- */
+        .play-btn {
+            background-color: var(--brand-gold);
+            color: #000;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 18px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 184, 0, 0.3);
+            margin-bottom: 60px;
+        }
+
+        .play-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 184, 0, 0.5);
+            background-color: var(--gold-hover);
+        }
+
+        /* --- Uniform Screenshot Grid --- */
+        .screenshot-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap; /* This ensures the 8 images wrap nicely onto multiple rows */
+        }
+
+        .phone-frame {
+            width: 260px;
+            height: 550px;
+            border-radius: 35px;
+            border: 8px solid var(--bg-card);
+            background-color: #000;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            position: relative;
+        }
+
+        .phone-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 30px;
+            color: var(--text-sub);
+            font-size: 14px;
+            border-top: 1px solid #2A2A2A;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            .phone-frame { width: 220px; height: 465px; border-width: 6px; }
+            .screenshot-grid { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="CricNext Icon.jpeg" alt="CricNext Logo" class="logo">
+        
+        <h1>CricNext</h1>
+        <p class="subtitle">Live scores, deep stats, and the ultimate Prediction Arena. Test your Cricket IQ today.</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.cricnext.cricnext&hl=en_IN" class="play-btn" target="_blank">
+            Get it on Google Play
+        </a>
+
+        <div class="screenshot-grid">
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.24.jpeg" alt="App Screen 1"></div>
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.25 (1).jpeg" alt="App Screen 2"></div>
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.25 (2).jpeg" alt="App Screen 3"></div>
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.25.jpeg" alt="App Screen 4"></div>
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.26 (1).jpeg" alt="App Screen 5"></div>
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.26 (2).jpeg" alt="App Screen 6"></div>
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.26.jpeg" alt="App Screen 7"></div>
+            <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.27.jpeg" alt="App Screen 8"></div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 CricNext. All rights reserved.
+    </footer>
+
+</body>
+</html>

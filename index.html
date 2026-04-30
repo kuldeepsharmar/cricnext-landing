@@ -84,7 +84,7 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            flex-wrap: wrap; /* This ensures the 8 images wrap nicely onto multiple rows */
+            flex-wrap: wrap;
         }
 
         .phone-frame {
@@ -105,6 +105,67 @@
             object-position: top;
         }
 
+        /* --- Google Cloud Compliance Section (Business & Team) --- */
+        .business-section {
+            margin-top: 80px;
+            padding: 40px;
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .business-section h2 {
+            font-size: 32px;
+            color: var(--text-main);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .business-section p {
+            color: var(--text-sub);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .founder-block {
+            padding-top: 30px;
+            border-top: 1px solid #2A2A2A;
+        }
+
+        .founder-block h3 {
+            font-size: 24px;
+            color: var(--brand-gold);
+            margin: 0 0 5px 0;
+        }
+
+        .founder-block h4 {
+            font-size: 16px;
+            color: var(--text-main);
+            margin: 0 0 20px 0;
+            font-weight: normal;
+        }
+
+        .linkedin-btn {
+            background-color: transparent;
+            color: var(--brand-gold);
+            border: 2px solid var(--brand-gold);
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .linkedin-btn:hover {
+            background-color: var(--brand-gold);
+            color: #000;
+        }
+
         footer {
             margin-top: 80px;
             padding: 30px;
@@ -113,12 +174,26 @@
             border-top: 1px solid #2A2A2A;
             width: 100%;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        footer a {
+            color: var(--text-sub);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--brand-gold);
         }
 
         @media (max-width: 768px) {
             h1 { font-size: 36px; }
             .phone-frame { width: 220px; height: 465px; border-width: 6px; }
             .screenshot-grid { gap: 20px; }
+            .business-section { padding: 30px 20px; }
         }
     </style>
 </head>
@@ -144,10 +219,31 @@
             <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.26.jpeg" alt="App Screen 7"></div>
             <div class="phone-frame"><img src="WhatsApp Image 2026-04-18 at 17.40.27.jpeg" alt="App Screen 8"></div>
         </div>
+
+        <!-- --- About the Business & Team --- -->
+        <div class="business-section">
+            <h2>About the Business & Product</h2>
+            <p>
+                CricNext is a digital-native platform built to gamify the live cricket viewing experience. 
+                Our core product provides real-time match data, user leaderboards, and interactive prediction engines powered by scalable cloud infrastructure. 
+                We operate on a freemium model directly through the Google Play Store, serving highly engaged cricket fans globally.
+            </p>
+            
+            <div class="founder-block">
+                <h2>Our Team</h2>
+                <h3>Kuldeep Sharma</h3>
+                <h4>Founder & Lead Developer</h4>
+                <a href="https://www.linkedin.com/in/kuldeep-sharma-717a43256/" class="linkedin-btn" target="_blank">
+                    View LinkedIn Profile
+                </a>
+            </div>
+        </div>
+
     </div>
 
     <footer>
-        &copy; 2026 CricNext. All rights reserved.
+        <div>&copy; 2026 CricNext. All rights reserved.</div>
+        <a href="privacy.html">Privacy Policy</a>
     </footer>
 
 </body>
